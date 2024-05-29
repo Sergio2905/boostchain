@@ -157,6 +157,7 @@ body._lock {
   flex-direction: column;
   position: relative;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 .main::before {
