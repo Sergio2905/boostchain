@@ -237,7 +237,8 @@ body._lock {
   width: 100%;
   font-weight: 700;
   margin-bottom: 30px;
-  box-shadow: 0 10px 60px rgba(186, 57, 1, 0.6);
+  box-shadow: 0 10px 60px rgba(186, 57, 1, 0);
+  transition: all 0.5s ease;
 }
 
 .btn_orange svg {
@@ -260,6 +261,8 @@ body._lock {
   width: 100%;
   color: var(--black);
   font-weight: 500;
+  box-shadow: 0 10px 60px rgba(0, 0, 0, 0);
+  transition: all 0.5s ease;
 }
 
 .btn_white svg {
@@ -363,5 +366,15 @@ body._lock {
 
   .decor__coin-mini {
     transform: translate(0, 30%);
+  }
+}
+
+@media (any-hover: hover) {
+  .btn_orange:hover {
+    box-shadow: 0 10px 60px rgba(186, 57, 1, 0.6);
+  }
+
+  .btn_white:hover {
+    box-shadow: 0 10px 60px rgba(0, 0, 0, 0.4);
   }
 }
